@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Aref Ruqaa' rel='stylesheet'>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <meta charset="UTF-8" name="viewport" content="initial-scale=1, width=device-width">
+        <title>Cherry jam</title>
+    </head>
+    <body>
+        <header>
+            <div>
+                <p id="date"></p>
+                <h1 style="margin-top: -1%;">Jam recepies</h1>
+            </div>
+        </header>
+        <main class="aref">
+            <div style="border: 7px dashed rgb(156, 99, 118); outline: solid 7px rgb(156, 99, 118);">
+            <div style="border: 5px solid rgb(156, 99, 118); outline: dashed 7px rgb(156, 99, 118);">
+            <div class="jam sofia">
+                <div style="display:inline-block; margin-right: 5%; margin-bottom: 5%;">
+                    <h1>Cherry jam</h1>
+                </div>
+                <div class="jam_img"></div>
+                <div class="jam_img">
+                    <img class="img-fluid" src="img/cherry_jam.png">
+                </div>
+            </div>
+
+            <hr size="8">
+
+            <div class="jam">
+                <div>
+                    <h3>Description:</h3>
+                    <p>Delicious pitted cherry jam is well suited for making desserts and on its own.</p>
+                </div>
+                
+                <div  class="cooking">
+                    <h3>Ingridients:</h3>
+                    <ul title="Ingredients">
+                        <li>1 kg - cherries</li>
+                        <li>900 g - sugar</li>
+                    </ul>
+
+                </div>
+                <div>
+                    <h3>Cooking:</h3>
+                    <ol>
+                        <li>To make cherry jam, measure the required amount of cherries and prepare sugar.</li>
+                        <li>Remove all twigs and leaves. Remove pits from cherries.</li>
+                        <li>Put the berries in a bowl. Sprinkle cherries with sugar. Cover and leave to stand for a few hours to allow the cherries to release their juice.</li>
+                        <li>When the berries start juice, put the pan on the fire, bring to a boil and boil them for 2-3 minutes. Then remove from heat, cover and leave to cool.</li>
+                        <li>So boil the jam 2 more times, allowing it to cool completely in between.</li>
+                        <li>Pour the boiling jam into the prepared jars. Close with lids.
+                            Jars of jam, after cooling, store in a cool place.</li>
+                    </ol>
+                </div>
+            </div>
+            <div style="text-align:center"><a href="index.html"><div class="btn"><b>Back</b></div></a></div>
+            </div>
+            </div>
+        </main>
+        <footer></footer>
+        <script>
+            var now = document.getElementById("date");
+            function getCurrentTimeString() {
+                return new Date().toTimeString().replace(/ .*/, '');
+            }
+            
+            setInterval(
+                () => now.innerHTML = getCurrentTimeString(),
+                1000
+            );
+        </script>
+    </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Aref Ruqaa' rel='stylesheet'>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <meta charset="UTF-8" name="viewport" content="initial-scale=1, width=device-width">
+        <title>Raspberry jam</title>
+    </head>
+    <body>
+        <header>
+            <div>
+                <p id="date"></p>
+                <h1 style="margin-top: -1%;">Jam recepies</h1>
+            </div>
+        </header>
+        <main class="aref">
+            <div style="border: 7px dashed rgb(156, 99, 118); outline: solid 7px rgb(156, 99, 118);">
+            <div style="border: 5px solid rgb(156, 99, 118); outline: dashed 7px rgb(156, 99, 118);">
+            <div class="jam sofia">
+                <div style="display:inline-block; margin-right: 5%; margin-bottom: 5%;">
+                    <h1>Raspberry jam</h1>
+                </div>
+                <div class="jam_img"></div>
+                <div class="jam_img">
+                    <img class="img-fluid" src="img/raspberry_jam.jpg">
+                </div>
+            </div>
+
+            <hr size="8">
+
+            <div class="jam">
+                <div>
+                    <h3>Description:</h3>
+                    <p>The finished jam has a dark, rich raspberry color, deep taste and aroma. Similar in texture to jelly, but with whole berries.</p>
+                </div>
+                
+                <div  class="cooking">
+                    <h3>Ingridients:</h3>
+                    <ul title="Ingredients">
+                        <li>1 kg - raspberries</li>
+                        <li>700 g - sugar</li>
+                    </ul>
+
+                </div>
+                <div>
+                    <h3>Cooking:</h3>
+                    <ol>
+                        <li>Clean the collected berries from leaves and twigs.</li>
+                        <li>Be sure to rinse the berry with running cool water in the shower or dissecting the water with your hand. Let the water drain.</li>
+                        <li>Pour the washed raspberries immediately with 1/3 of the sugar, mix gently and leave until the juice appears. This will take about 2 hours.</li>
+                        <li>Put the raspberries with the released juice on a slight heat. Let the sugar dissolve completely.</li>
+                        <li>Then turn the heat up to medium and bring to a boil. With a low boil, cook for 4-5 minutes. After 5 minutes, remove from the stove, and skim off the foam.</li>
+                        <li>Add the remaining sugar to the hot jam cleared of foam, gently stirring, let it dissolve completely. Leave the jam to cool completely.</li>
+                        <li>Then repeat the boiling procedure twice, excluding the addition of sugar.</li>
+                        <li>After the third boiling, pour the finished peeled jam hot into prepared jars. Banks must be warm, dry, sterile. Close with lids.</li>
+                    </ol>
+                </div>
+            </div>
+            <div style="text-align:center"><a href="index.html"><div class="btn"><b>Back</b></div></a></div>
+            </div>
+            </div>
+        </main>
+        <footer></footer>
+        <script>
+            var now = document.getElementById("date");
+            function getCurrentTimeString() {
+                return new Date().toTimeString().replace(/ .*/, '');
+            }
+            
+            setInterval(
+                () => now.innerHTML = getCurrentTimeString(),
+                1000
+            );
+        </script>
+    </body>
+</html>

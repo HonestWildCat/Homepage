@@ -1,0 +1,131 @@
+body, html {
+    height: 100%;
+    background-image: url("img/dialog_pink1.svg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Sofia';font-size: 22px;
+    justify-items: center;
+}
+
+header {
+    background-color: rgb(245, 224, 227);
+    text-align: center;
+    height: 15%;
+    width: 100%;
+    border-bottom: 7px dashed rgb(156, 99, 118);
+    outline: solid 6px rgb(156, 99, 118);
+
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgb(119, 47, 47);
+}
+
+main {
+    margin: 7%;
+    border: 5px solid rgb(156, 99, 118);
+    background-color: rgb(245, 224, 227);
+}
+
+img {
+    box-shadow: 10px -15px rgb(192, 83, 83);
+    border-radius: 3%;
+}
+
+footer {
+    height: 5%;
+    background-image: url("img/dialog_pink1.svg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+hr {
+    margin: 5%;
+    color: rgb(128, 74, 92);
+}
+
+.index {
+    text-align: center;
+    font-size: large;
+    font-size: 22px;
+}
+
+.parent {
+    margin: 3%;
+    background-color: rgb(245, 224, 227);
+    overflow:hidden;
+}
+
+.block{
+    margin: 3%;
+    display:inline-block;
+    flex: content;
+    transition: transform .2s;
+}
+
+.block:hover {
+    -webkit-transform: scale(0.9); /* Safari 3-8 */
+    transform: scale(0.9); 
+}
+
+.btn{
+    margin: 20px;
+    transition: transform .2s;
+    background-color: mistyrose;
+    border: 3px solid rgb(173, 108, 108);
+}
+.btn:hover{
+    margin: 18px;
+    transform: scale(0.9);
+    background-color: rgb(212, 152, 146);
+    border: 5px solid rgb(141, 80, 80);
+}
+
+.dotted {
+    border: 10px dotted rgb(156, 99, 118);
+    margin: 5%;
+    border-radius: 25px;
+}
+
+.sofia {
+    font-family: 'Sofia';
+}
+
+.aref {
+    font-family: 'Aref Ruqaa';
+}
+
+.jam {
+    margin: 5%;
+    justify-content: space-between;
+}
+
+.jam_img {
+    display:inline-block;
+    
+}
+
+.cooking {
+
+    background-color: rgb(250, 241, 245);
+    border-radius: 25px;
+    padding: 1%;
+    display: inline-block;
+}
+
+#date {
+    text-align: right;
+    margin-right: 2%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 20px;
+}
